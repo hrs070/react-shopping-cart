@@ -9,7 +9,6 @@ export default function Shop({ productArray, resendPrevProducts }) {
 
     function addToCart(products) {
         productArray(products)
-        console.log("Shop", products)
     }
 
     useEffect(() => {
