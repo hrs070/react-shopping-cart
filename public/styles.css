@@ -294,3 +294,110 @@ nav {
   border: none;
   border: 1px solid black;
 }
+
+/* Cart Section */
+.cart-container {
+  margin: 54px auto 0;
+  padding: 20px 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.product-card-main {
+  margin: 0 10px 20px;
+  border: 1px solid black;
+}
+.empty-cart-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: rgba(48, 48, 48, 1);
+}
+.product-cart-card {
+  width: 200px;
+  padding: 15px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.cart-right {
+  width: 50%;
+  height: 80vh;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-quantity-div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.quantity-button {
+  font-size: 1.4rem;
+  width: 80px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.quantity-button:hover {
+  background-color: white;
+  color: black;
+  border-bottom: none;
+}
+
+.product-quantity {
+  font-size: 1.5rem;
+}
+.billing-heading {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+.billing-quantity {
+  width: 10%;
+}
+.billing-item {
+  width: 60%;
+}
+.billing-price {
+  width: 20%;
+}
+.billing-details {
+  margin: 5px 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  align-items: flex-end;
+  justify-content: space-between;
+}
