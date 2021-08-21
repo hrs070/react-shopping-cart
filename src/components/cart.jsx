@@ -48,7 +48,7 @@ export default function Cart({ cartProducts }) {
                     {filteredCart.map(createBillingDetails)}
                     <div className="billing-total-row">
                         <div className="billing-total-heading">Total</div>
-                        <div className="billing-total-amount">{calculateTotal()}</div>
+                        <div className="billing-total-amount">$ {calculateTotal()}</div>
                     </div>
                 </div>
             }
