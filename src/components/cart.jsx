@@ -18,6 +18,7 @@ export default function Cart({ cartProducts }) {
         )
     }
 
+    // The Problem lies in this function so reverted it back to where it doesn't change the product pricing
     function calculateTotal() {
         return filteredCart.reduce((acc, curr) => acc + curr.price, 0)
     }

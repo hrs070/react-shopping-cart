@@ -413,11 +413,9 @@ nav {
   padding: 5px;
 }
 .billing-total-heading {
-  width: 30%;
   text-align: end;
 }
 .billing-total-amount {
-  width: 30%;
   font-size: 1.4rem;
   text-align: center;
 }
