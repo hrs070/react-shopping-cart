@@ -19,7 +19,7 @@ export default function Cart({ cartProducts }) {
         )
     }
 
-
+    // Need to make this work correctly.
     function deleteItem(itemId) {
         setFilteredCart(filteredCart.filter((item) => Number(item.id) !== Number(itemId)))
     }
