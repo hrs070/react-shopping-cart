@@ -4,7 +4,6 @@ export default function Cart({ cartProducts }) {
 
     const ids = cartProducts.map(object => object.id)
     const [filteredCart, setFilteredCart] = useState(cartProducts.filter(({ id }, index) => !ids.includes(id, index + 1)));
-
     const [itemQuantityState, setItemQuantityState] = useState(1);
 
     function createCard(product) {
@@ -19,7 +18,10 @@ export default function Cart({ cartProducts }) {
         )
     }
 
-    // Need to make this work correctly.
+    function calculateTotal() {
+        return filteredCart.reduce((acc, curr) => acc + curr.price, 0)
+    }
+
     function deleteItem(itemId) {
         setFilteredCart(filteredCart.filter((item) => Number(item.id) !== Number(itemId)))
     }
@@ -44,8 +46,9 @@ export default function Cart({ cartProducts }) {
                         <div className="billing-price">Price</div>
                     </div>
                     {filteredCart.map(createBillingDetails)}
-                    <div className="billing-heading">
-                        <div className="billing-item">Total</div>
+                    <div className="billing-total-row">
+                        <div className="billing-total-heading">Total</div>
+                        <div className="billing-total-amount">{calculateTotal()}</div>
                     </div>
                 </div>
             }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HashRouter as Router, BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import App from "./components/app";
 import Shop from "./components/shop";
 import Nav from "./components/nav";
